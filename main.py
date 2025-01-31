@@ -15,7 +15,7 @@ import numpy as np
 def main() -> None:
 
 
-    structure = ShapeFactory.T_Profile2(20, 40, 2)
+    structure = ShapeFactory.T_Profile2(20, 80, 2)
     # structure.transformRotate(-np.pi/8)
     # structure.display()
 

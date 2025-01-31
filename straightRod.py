@@ -14,15 +14,16 @@ from geom import *
 
 
 class Structure:
-    def __init__(self, members: list[Structure] = [], name='', xA=0., yA=0.):
+    def __init__(self, members=None, name='', xA=0., yA=0.):
         self.members: list[Structure] = []
         self.parent: Structure = None
         self.points = PointCloud()
         self.member_points: set = set()
         self.junctions: list[Junction] = []
 
-        for member in members:
-            self.add_member(member)
+        if members is not None:
+            for member in members:
+                self.add_member(member)
 
         self.name: str = name
         self.area: float = None
