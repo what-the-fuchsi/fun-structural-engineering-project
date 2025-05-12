@@ -4,8 +4,8 @@ Created on Fri Feb 25 18:41:07 2022
 
 @author: Daniel
 """
-from geom import *
-from straightRod import *
+from geom import Point2D, PointCloud
+from structures import Structure, StraightRod
 import numpy as np
 
 

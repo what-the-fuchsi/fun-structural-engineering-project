@@ -5,7 +5,7 @@ Created on Fri Feb 25 12:24:04 2022
 @author: Daniel
 """
 
-from straightRod import StraightRod
+from structures import StraightRod
 from geom import Point2D, PointCloud
 from factory import ShapeFactory
 import matplotlib.pyplot as plt
